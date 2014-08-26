@@ -1,0 +1,62 @@
+<!-- Wrap all page content here -->
+<div id="fixedNavBar">
+  <div id="header_navigation">
+    <ul>
+      <li><a id="demo1Btn" href="#demo1" class="demoBtn">テストページ①</a></li>
+      <li><a id="demo2Btn" href="#demo2" class="demoBtn">テストページ②</a></li>
+      <li><a id="demo3Btn" href="#demo3" class="demoBtn">テストページ③</a></li>
+    </ul>     
+  </div>
+</div>
+
+
+<!-- begin fullSectionWrap -->
+<div id="fullSectionWrap">
+
+  <!-- begin fullSection -->
+  <div class="fullSection">
+
+    <!-- 1ページ -->
+    <div id="demo1" class="sectionContent">
+        <h1>テストページ①</h1>
+        <p class="content">
+            testtesttesttest<br>
+            <br>
+            <a id="demo2Btn" class="demoBtn">テストページ②へ</a>
+        </p>
+        <h2 class="sectionNumber">テストページ①</h2>
+    </div>
+
+    <!-- 2ページ -->
+    <div id="demo2" class="sectionContent">
+        <h1>テストページ②</h1>
+        <p class="content">
+            testtesttesttest<br>
+            <br>
+            <a id="demo3Btn" class="demoBtn">テストページ③へ</a>
+        </p>
+        <h2 class="sectionNumber">テストページ②</h2>
+    </div>
+ 
+    <!-- 3ページ -->
+    <div id="demo3" class="sectionContent">
+        <h1>テストページ③</h1>
+        <p class="content">
+            testtesttesttest<br>
+          <br>
+        </p>
+        <h2 class="sectionNumber">テストページ③</h2>
+    </div>
+
+  </div>
+  <!-- begin fullSection -->
+
+</div>
+<!-- end fullSectionWrap -->
+
+<script type="text/javascript">
+    // パララックスページ実装のプラグインを有効
+    // http://scrolldjs.com/
+    $("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();});
+</script>
+

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.clear_box {
+  width      : 100%;
+  height     : 0px;
+  display    : block;
+  clear      : both;
+}
+
+a:link, a:visited, a:hover, a:active { 
+  text-decoration: none;
+  color: #4682b4;
+}
+
+ul {
+  /* paddingを0にすることでliのマーカー部分の余白を無くすことができる */
+  padding: 0px;
+  -webkit-padding-start: 0px;
+  moz-padding-start: 0px;
+  list-style-position: outside;
+}
+
+li { list-style: none; }
+
